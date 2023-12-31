@@ -1,13 +1,13 @@
-import Distributor.Distributor;
+import AHP.Goal;
+import AHP.Subject;
 
 public class Main {
     public static void main(String[] args) {
-        Distributor foobar = new Distributor("foobar");
+        Subject foobar = new Subject("foobar");
         foobar.setDeliveryTime(10.0f).setPrice(20.0f).setQuality(5.0f);
-        // TODO: set up the goal system
-        // 1. Goal have all same criteria as distributor
-        // 2. But goal will contain a percentage as its criteria symbolizing how much weight a criteria is
-        // 3. A Goal have a getter for each criteria
+
+        Goal goal = new Goal();
+        goal.setService(0.25f).setPrice(0.25f).setQuality(0.25f).setDeliveryTime(0.25f);
 
         // TODO: Set up Analytical Hierarchy Process
         // 1. It takes a goal, and distributors
