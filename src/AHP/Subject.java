@@ -4,12 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Subject {
-    String distributorName;
+    String subjectName;
     float totalScore = 0.0f;
     Map<String, Float> criteria;
 
-    public Subject(String distributorName) {
-        this.distributorName = distributorName;
+    public Subject(String subjectName) {
+        this.subjectName = subjectName;
         this.criteria = new HashMap<String, Float>();
         this.criteria.put("price", 0.0f);
         this.criteria.put("quality", 0.0f);
@@ -60,5 +60,9 @@ public class Subject {
 
     public Float getTotalScore() {
         return this.totalScore;
+    }
+
+    public String getSubjectName() {
+        return this.subjectName;
     }
 }
