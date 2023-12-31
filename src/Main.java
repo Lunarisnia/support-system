@@ -13,10 +13,13 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            // TODO: add name and NPM
             System.out.println("Kelompok 5");
+            System.out.println("Juliani Ester Assa 202143500518");
+            System.out.println("Lambang Tri Wiradana 202143500506");
+            System.out.println("Ahmad Alfarizi Ramdani 202143501270");
+            System.out.println("Muhammad Zivans 202143500489");
+            System.out.println("Andhika Pandu Abimanyu 201843500515");
             System.out.println("Rio Arswendo Rachmad 202143500473");
-            System.out.println("Juliani Ester Assa 202143500473");
             System.out.println("Welcome to Analytical Hierarchy Process Machine");
             System.out.println("1. Add Distributor");
             System.out.println("2. Add Goal");
