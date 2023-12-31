@@ -41,4 +41,24 @@ public class Subject {
         this.totalScore = score;
         return this;
     }
+
+    public Float getPrice() {
+        return this.criteria.get("price");
+    }
+
+    public Float getQuality() {
+        return this.criteria.get("quality");
+    }
+
+    public Float getService() {
+        return this.criteria.get("service");
+    }
+
+    public Float getDeliveryTime() {
+        return this.criteria.get("delivery_time");
+    }
+
+    public Float getTotalScore() {
+        return this.totalScore;
+    }
 }
