@@ -1,14 +1,14 @@
-package Distributor;
+package AHP;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Distributor {
+public class Subject {
     String distributorName;
     float totalScore = 0.0f;
     Map<String, Float> criteria;
 
-    public Distributor(String distributorName) {
+    public Subject(String distributorName) {
         this.distributorName = distributorName;
         this.criteria = new HashMap<String, Float>();
         this.criteria.put("price", 0.0f);
@@ -17,27 +17,27 @@ public class Distributor {
         this.criteria.put("delivery_time", 0.0f);
     }
 
-    public Distributor setPrice(Float price) {
+    public Subject setPrice(Float price) {
         this.criteria.put("price", price);
         return this;
     }
 
-    public Distributor setQuality(Float quality) {
+    public Subject setQuality(Float quality) {
         this.criteria.put("quality", quality);
         return this;
     }
 
-    public Distributor setService(Float service) {
+    public Subject setService(Float service) {
         this.criteria.put("service", service);
         return this;
     }
 
-    public Distributor setDeliveryTime(Float deliveryTime) {
+    public Subject setDeliveryTime(Float deliveryTime) {
         this.criteria.put("delivery_time", deliveryTime);
         return this;
     }
 
-    public Distributor setTotalScore(Float score) {
+    public Subject setTotalScore(Float score) {
         this.totalScore = score;
         return this;
     }
